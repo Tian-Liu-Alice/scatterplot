@@ -42,7 +42,7 @@ scatterplot(test, y, x, "red")
 
 <img src="man/figures/README-example-2.png" width="100%" />
 
-===
+***
 
 **Explain My Development**  
 
