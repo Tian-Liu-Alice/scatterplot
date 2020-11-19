@@ -1,0 +1,30 @@
+---
+title: "scatterplot"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{scatterplot}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scatterplot)
+```
+
+Function scatterplot() is used to create a scatterplot which makes the relationship between two variables specified in the input of the function (x and y) visualized.  
+
+```{r}
+test <- data.frame(
+    x = c(2,4,5,8,10),
+    y = c(1,2,3,5,5),
+    z = c(1,2,5,7,9))
+scatterplot(test, x, y)
+scatterplot(test, y, x, "red")
+```

@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# scatterplot
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of scatterplot is to create a scatterplot which makes the relationship between two variables specified in the input of the function (x and y) visualized.
+
+## Installation
+
+You can install the released version of scatterplot from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("Tian-Liu-Alice/scatterplot")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(scatterplot)
+## basic example code
+test <- data.frame(
+    x = c(2,4,5,8,10),
+    y = c(1,2,3,5,5),
+    z = c(1,2,5,7,9))
+scatterplot(test, x, y)
+scatterplot(test, y, x, "red")
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
